@@ -23,7 +23,7 @@ const Index = () => {
 
   if (!isLoggedIn) {
     return (
-      <Container centerContent maxW="container.sm" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center" boxShadow="2xl">
+      <Container centerContent maxW="container.sm" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center" boxShadow="2xl" p={{ base: 4, md: 0 }}>
         <VStack spacing={4}>
           <FormControl>
             <FormLabel htmlFor="username">Username</FormLabel>
