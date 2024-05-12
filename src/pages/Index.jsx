@@ -23,7 +23,7 @@ const Index = () => {
 
   if (!isLoggedIn) {
     return (
-      <Container centerContent maxW="container.sm" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
+      <Container centerContent maxW="container.sm" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center" boxShadow="2xl">
         <VStack spacing={4}>
           <FormControl>
             <FormLabel htmlFor="username">Username</FormLabel>
@@ -52,7 +52,7 @@ const Index = () => {
               <MenuItem icon={<FaVideo />}>Video Call</MenuItem>
               <MenuItem icon={<FaTasks />}>Daily Task</MenuItem>
               <MenuItem icon={<FaSignOutAlt />} onClick={handleLogout}>
-                Logout
+                Log Out
               </MenuItem>
             </MenuList>
           </Menu>
